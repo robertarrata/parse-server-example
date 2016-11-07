@@ -3,9 +3,9 @@ vm: true
 
 env_variables:
   # --REQUIRED--
-  DATABASE_URI: mongodb://localhost:27017/dev
-  APP_ID: <your-app-id>
-  MASTER_KEY: <your-master-key>
+  DATABASE_URI: mongodb://appo:appo@ds048719.mlab.com:48719/app-ology_cloud
+  APP_ID: TpdgcssFutdFAGAsenVLQGaRtdfhbBfpPWepe6cW
+  MASTER_KEY: s8VCBJl2w43p3nmJQ3XFM1YGsRQtugPxhqewFhGc
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse
