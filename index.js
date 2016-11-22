@@ -24,7 +24,7 @@ var api = new ParseServer({
   publicServerURL: 'https://parse-on-appology.azurewebsites.net/parse',
   appName: 'parse-on-appology',
   emailAdapter: {
-	module: 'parse-server-mailgun',
+	module: 'parse-server-simple-mailgun-adapter',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
