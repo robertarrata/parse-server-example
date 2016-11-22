@@ -17,14 +17,14 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'TpdgcssFutdFAGAsenVLQGaRtdfhbBfpPWepe6cW',
   masterKey: process.env.MASTER_KEY || 's8VCBJl2w43p3nmJQ3XFM1YGsRQtugPxhqewFhGc', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://parse-on-appology.azurewebsites.net/parse/',  // Don't forget to change to https if needed
-  verifyUserEmails: true,
-  publicServerURL: 'https://parse-on-appology.azurewebsites.net/parse',
-  appName: 'parse-on-appology',
   liveQuery: {
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
   },
+  verifyUserEmails: true,
+  publicServerURL: 'https://parse-on-appology.azurewebsites.net/parse',
+  appName: 'parse-on-appology',
   emailAdapter: {
-	module: 'parse-server-simple-mailgun-adapter',
+	module: 'parse-server-mailgun',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
