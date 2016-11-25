@@ -24,7 +24,7 @@ var api = new ParseServer({
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
   },
   emailAdapter: {
-	module: 'parse-server-simple-mailgun-adapter',
+	module: 'parse-server-mailgun',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
@@ -32,7 +32,7 @@ var api = new ParseServer({
 		domain: 'sandbox4cffdc064deb461d9a442ee851b74a57.mailgun.org',
 		// Your API key from mailgun.com
 		apiKey: 'key-ad4e408d1a885c7af7886bc4d31f258c',
-		}
+	}
    }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
