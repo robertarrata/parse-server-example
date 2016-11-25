@@ -24,12 +24,12 @@ var api = new ParseServer({
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
   },
   emailAdapter: {
-	module: 'parse-server-simple-mailgun-adapter',
+	module: 'parse-server-fp-simple-mailgun-adapter',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
 		// Your domain from mailgun.com
-		domain: 'mg.app-ology.com',
+		domain: 'sandbox4cffdc064deb461d9a442ee851b74a57.mailgun.org',
 		// Your API key from mailgun.com
 		apiKey: 'key-ad4e408d1a885c7af7886bc4d31f258c',
 	}
