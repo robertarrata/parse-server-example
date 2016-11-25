@@ -4,7 +4,7 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
-var mailGun = require("parse-server-simple-mailgun-adapter");
+var mailGun = require("parse-server-mailgun");
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGOLAB_URI;
 
@@ -25,7 +25,7 @@ var api = new ParseServer({
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
   },
   emailAdapter: {
-	module: 'parse-server-simple-mailgun-adapter',
+	module: 'parse-server-mailgun',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
