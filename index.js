@@ -24,7 +24,7 @@ var api = new ParseServer({
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
   },
   emailAdapter: {
-	module: 'parse-server-simple-mailgun-adapter-template',
+	module: 'parse-server-simple-mailgun-adapter',
 	options: {
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
