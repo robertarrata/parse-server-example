@@ -29,7 +29,7 @@ var api = new ParseServer({
 		// The address that your emails come from
 		fromAddress: 'rarrata@app-ology.com',
 		// Your domain from mailgun.com
-		domain: 'mg.app-ology.com.mailgun.org',
+		domain: 'mg.app-ology.com',
 		// Your API key from mailgun.com
 		apiKey: 'key-ad4e408d1a885c7af7886bc4d31f258c',
 	}
