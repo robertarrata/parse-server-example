@@ -12,13 +12,13 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://robert:robert@ds019480.mlab.com:19480/usd',
+  databaseURI: databaseUri || 'mongodb://appo:appo@ds159217.mlab.com:59217/refscheduler',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'WELU2VzUJSXBTJyB1lMDkt3O1y7BTxwkZhwY1vZM',
   masterKey: process.env.MASTER_KEY || 'hLo0gGABoXjZce6Gdmh55S54Z431ypBOSlZ45Dlh', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://appology.azurewebsites.net/parse/',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://refscheduler.azurewebsites.net/parse/',  // Don't forget to change to https if needed
   verifyUserEmails: true,
-  publicServerURL: 'https://appology.azurewebsites.net/parse/',
+  publicServerURL: 'https://refscheduler.azurewebsites.net/parse/',
   appName: 'parse-on-appology',
   liveQuery: {
     classNames: ["User", "Comments"] // List of classes to support for query subscriptions
